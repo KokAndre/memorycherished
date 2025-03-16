@@ -1,0 +1,46 @@
+.modal-title {
+    background-color: #f5f5f5;
+}
+
+.pdf-size {
+    height: 100%;
+}
+
+.file-viewer-container {
+    height: 80vh !important;
+    background-color: grey;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.file-viewer-container-custom {
+    height: var(--bannerPDFHeight) !important;
+    background-color: grey;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.pdfViewer.removePageBorders .page {
+    margin-bottom: 0px !important;
+}
+
+::ng-deep .ng2-pdf-viewer-container {
+    align-content: center !important;
+}
+
+a {
+    outline: none !important;
+}
+
+.hide-modal {
+    visibility: hidden;
+}
+
+.capture-member-data {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.delete-icon {
+    color: #ee202e;
+}

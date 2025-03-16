@@ -1,0 +1,87 @@
+<ng-container [ngSwitch]="data.type" *ngIf="!isLoading">
+  <ng-container *ngSwitchCase="modalTypesEnum.InformationModal" [ngTemplateOutlet]="InformationModal"></ng-container>
+  <ng-container *ngSwitchCase="modalTypesEnum.PDFModal" [ngTemplateOutlet]="PDFModal"></ng-container>
+  <ng-container *ngSwitchCase="modalTypesEnum.ConfirmationModal" [ngTemplateOutlet]="ConfirmationModal"></ng-container>
+ 
+</ng-container>
+
+<ng-template #InformationModal>
+  <div *ngIf="data.title" class="modal-title">
+    <div class="row mx-0 p-3" style="flex-flow: nowrap;">
+      <div class="col-1 px-0"></div>
+      <div class="col-10">
+        <p class="text-size-20 mb-0 text-center" [innerHTML]="data.title"></p>
+      </div>
+      <div class="col-1 px-0 text-end"><mat-icon [matDialogClose]="modalOutcomeOptions.Close"
+          class="ml-n2 mb-n4 pt-1 pointer">close</mat-icon></div>
+    </div>
+
+    <mat-divider class="my-2"></mat-divider>
+  </div>
+
+  <div *ngIf="data.details" class="row mx-0 p-3">
+    <p class="text-size-18 text-center" [innerHTML]="data.details"></p>
+  </div>
+</ng-template>
+
+<ng-template #PDFModal>
+  <div *ngIf="data.title" class="modal-title">
+    <div class="row mx-0 py-2">
+      <div class="col-1 px-0"></div>
+      <div class="col-10">
+        <p class="text-size-20 mb-0 text-center" [innerHTML]="data.title"></p>
+      </div>
+      <div class="col-1 px-0 text-end"><mat-icon [matDialogClose]="modalOutcomeOptions.Close"
+          class="ml-n2 mb-n4 pt-1 pointer">close</mat-icon></div>
+    </div>
+
+    <mat-divider class="my-2"></mat-divider>
+  </div>
+
+  <div *ngIf="data.details">
+    <div class="my-2 justify-content-center file-viewer-container">
+      <!-- <pdf-viewer class="pdf-size" [src]="data.details" [zoom-scale]="'page-fit'" [original-size]="false"
+        [render-text]="false">
+      </pdf-viewer> -->
+    </div>
+
+    <div [hidden]="data.inputValues?.removeDownloadButton" class="row mx-0 justify-content-center mb-2">
+      <div class="red-button" (click)="downloadDocument()">
+        <p class="mb-0">Download</p>
+        <span class="red-button-icon"></span>
+      </div>
+    </div>
+
+  </div>
+</ng-template>
+
+<ng-template #ConfirmationModal>
+  <div *ngIf="data.title" class="modal-title">
+    <div class="row mx-0 p-3" style="flex-flow: nowrap;">
+      <div class="col-1 px-0"></div>
+      <div class="col-10">
+        <p class="text-size-20 mb-0 text-center" [innerHTML]="data.title"></p>
+      </div>
+      <div class="col-1 px-0 text-end"><mat-icon [matDialogClose]="modalOutcomeOptions.Close"
+          class="ml-n2 mb-n4 pt-1 pointer">close</mat-icon></div>
+    </div>
+
+    <mat-divider class="my-2"></mat-divider>
+  </div>
+
+  <div *ngIf="data.details" class="row mx-0 p-3">
+    <p class="text-size-18 text-center mb-0" [innerHTML]="data.details"></p>
+  </div>
+
+  <div class="row mx-0 my-4 justify-content-center">
+    <div class="white-button" [matDialogClose]="modalOutcomeOptions.Cancel">
+      <p class="mb-0">Cancel</p>
+      <span class="white-button-icon"></span>
+    </div>
+
+    <div class="red-button ml-3" [matDialogClose]="modalOutcomeOptions.Confirm">
+      <p class="mb-0">Confirm</p>
+      <span class="red-button-icon"></span>
+    </div>
+  </div>
+</ng-template>
