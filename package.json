@@ -6,8 +6,8 @@
     "start": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build": "ng build --base-href \"https://KokAndre.github.io/airport-website/\"",
-    "deploy": "npx angular-cli-ghpages --dir=dist/airport-website"
+    "build": "ng build --base-href \"https://KokAndre.github.io/memorycherished/\"",
+    "deploy": "npx angular-cli-ghpages --dir=dist/front-end"
   },
   "private": true,
   "dependencies": {

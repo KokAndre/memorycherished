@@ -171,7 +171,7 @@ h6,
 }
 
 .text-semi-bold {
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-semibold !important;
 }
 
 .text-bold {
@@ -579,7 +579,7 @@ h6,
   transition: color 0.3s;
   // font-size: 2vw;
   // margin-bottom: 0.5vw;
-  // width: fit-content;
+  width: fit-content;
 
   &:hover {
       color: lightslategrey;

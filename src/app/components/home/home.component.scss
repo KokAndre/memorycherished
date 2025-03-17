@@ -22,13 +22,21 @@
 .carousel-inner,
 .carousel-item {
     height: 100% !important;
-    transition: transform 1.5s ease, opacity .5s ease-out;
+    transition:
+        transform 1.5s ease,
+        opacity 0.5s ease-out;
 }
 
 .slide-heading-text {
     font-size: 6vw;
     margin-bottom: 2vw;
     font-weight: bold;
+}
+
+.secondary-heading-text {
+    font-size: 5vw;
+    // margin-bottom: 2vw;
+    // font-weight: bold;
 }
 
 .slide-description-text {
@@ -64,20 +72,39 @@
 }
 
 .online-legacy-section {
-    background-image: url('../../../assets/home-page/legacy-background-image.jpeg');
+    background-image: url("../../../assets/home-page/legacy-background-image.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: fit-content;
-    // aspect-ratio: 2/1;
-    padding: 4rem 2rem 8rem 2rem;
+    padding: 4rem 2rem 4rem 2rem;
 }
 
 .legacy-item-container {
     background-color: rgb(222, 222, 222, 0.5);
     width: 100%;
     min-height: 320px;
+
+
+    perspective: 1000px;
+    transition: all 1s;
+    transition-timing-function: ease;
+    // background-color: black;
+    // border-radius: 10px;
+    z-index: 10;
+    position: relative;
+    // align-content: center;
+}
+
+.legacy-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 288px;
+    transform-style: preserve-3d;
+    transition: all 1s;
+    transition-timing-function: ease;
 }
 
 .legacy-item-divider {
@@ -85,4 +112,109 @@
     height: 3px;
     background-color: white;
     margin-bottom: 2rem;
+}
+
+.legacy-explanation-block {
+    background-color: rgba(87, 87, 87, 1);
+    padding: 2rem 4rem;
+}
+
+
+
+
+
+
+.legacy-item-container:hover .legacy-flip-card-inner {
+    transform: rotateY(180deg);
+    // height: 200px !important;
+    // width: 312px !important;
+    // padding-top: 5px;
+}
+
+.legacy-flip-card-front,
+.legacy-flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 1s;
+    transition-timing-function: ease;
+}
+
+.legacy-flip-card-front {
+    // background-color: black;
+    // border-radius: 10px;
+}
+
+.legacy-flip-card-back {
+    // border-radius: 10px;
+    // color: white;
+    transform: rotateY(180deg);
+    align-content: center;
+    // background-color: black;
+    // box-shadow: 0px 0px 8px 5px grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.no-bold {
+    font-weight: 100 !important;
+}
+
+.mt-n-25 {
+    margin-top: -25px;
+}
+
+.inspiration-image-section {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 480px;
+}
+
+.inspiration-text-section {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 248, 237);
+    max-height: 480px;
+    align-content: center;
+}
+
+.inspiration-text-block {
+    height: fit-content;
+}
+
+.inspiration-heading-text {
+    color: #A66717;
+    text-align: center;
+    font-size: 26px;
+}
+
+.inspiration-secondary-text {
+    color: #BC9B5D;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
 }
