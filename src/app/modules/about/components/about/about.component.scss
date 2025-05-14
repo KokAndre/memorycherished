@@ -1,0 +1,17 @@
+.about-page-image {
+    object-fit: contain;
+    object-position: center;
+    width: 400px;
+    z-index: 2;
+    position: relative;
+}
+
+.about-text-block {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    top: -140px;
+    position: relative;
+    padding: 140px 5rem 3rem 5rem !important;
+    text-align: center;
+}

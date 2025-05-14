@@ -1,0 +1,37 @@
+<div class="white-text-block mt-5 mx-5">
+  <p class="heading-text">Choose your pricing plan</p>
+
+  <div class="row mx-0">
+    <div *ngFor="let item of plans" class="col-4">
+      <div class="pricing-container p-3">
+
+        <p class="text-size-20" [innerHTML]="item.title"></p>
+
+        <!-- <p>R<span class="text-size-40" [innerHTML]="item.price"></span></p> -->
+
+        <div class="row mx-0 row-no-wrap justify-content-center">
+          <p class="width-fit-content pl-0 pr-1">R</p>
+          <p class="width-fit-content p-0 pt-2 text-size-40" [innerHTML]="item.priceDisplayValue"></p>
+        </div>
+
+        <p [innerHTML]="item.description"></p>
+
+        <div class="plan-select-button">
+          <p>Select</p>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div *ngFor="let textItem of item.planProperties" class="row mx-0 mt-2 row-no-wrap">
+          <div class="col-auto p-0">
+            <div class="custom-check"></div>
+          </div>
+          <div class="col pr-0 pl-2">
+            <p class="mb-0" [innerHTML]="textItem"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

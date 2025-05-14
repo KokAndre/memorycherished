@@ -252,6 +252,9 @@ h6,
   padding-left: 1.5rem !important;
 }
 
+.pr-0 {
+  padding-right: 0px !important;
+}
 .pr-1 {
   padding-right: 0.25rem !important;
 }
@@ -559,7 +562,6 @@ h6,
 //   // cursor: url('https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png'), auto;
 // }
 
-
 .primary-button {
   background-color: white;
   color: black;
@@ -586,7 +588,7 @@ h6,
   width: fit-content;
 
   &:hover {
-      color: #4e6179;
+    color: #4e6179;
   }
 }
 
@@ -614,4 +616,10 @@ p {
 
 .row-no-wrap {
   flex-wrap: nowrap !important;
+}
+
+.heading-text {
+  font-size: 50px;
+  margin-bottom: 2vw;
+  font-weight: bold;
 }
