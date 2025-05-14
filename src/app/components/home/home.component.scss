@@ -35,8 +35,6 @@
 
 .secondary-heading-text {
     font-size: 5vw;
-    // margin-bottom: 2vw;
-    // font-weight: bold;
 }
 
 .slide-description-text {
@@ -90,11 +88,8 @@
     perspective: 1000px;
     transition: all 1s;
     transition-timing-function: ease;
-    // background-color: black;
-    // border-radius: 10px;
     z-index: 10;
     position: relative;
-    // align-content: center;
 }
 
 .legacy-flip-card-inner {
@@ -119,16 +114,8 @@
     padding: 2rem 4rem;
 }
 
-
-
-
-
-
 .legacy-item-container:hover .legacy-flip-card-inner {
     transform: rotateY(180deg);
-    // height: 200px !important;
-    // width: 312px !important;
-    // padding-top: 5px;
 }
 
 .legacy-flip-card-front,
@@ -142,40 +129,10 @@
     transition-timing-function: ease;
 }
 
-.legacy-flip-card-front {
-    // background-color: black;
-    // border-radius: 10px;
-}
-
 .legacy-flip-card-back {
-    // border-radius: 10px;
-    // color: white;
     transform: rotateY(180deg);
     align-content: center;
-    // background-color: black;
-    // box-shadow: 0px 0px 8px 5px grey;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .no-bold {
     font-weight: 100 !important;

@@ -3,28 +3,27 @@
   <!-- Header -->
   <div class="header-container">
 
-
-
-    <div class="logo-flip-card">
-      <div class="logo-flip-card-inner">
-        <div class="logo-flip-card-front">
-          <img class="website-logo" [src]="'assets/memory-cherished-logo.PNG'">
-        </div>
-        <div class="logo-flip-card-back">
-          <p class="mb-0 text-center text-size-m logo-card-text">Your story<br />lives on</p>
+    <div class="row mx-0">
+      <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+        <div class="logo-flip-card">
+          <div class="logo-flip-card-inner">
+            <div class="logo-flip-card-front">
+              <img class="website-logo" [src]="'assets/memory-cherished-logo.PNG'">
+            </div>
+            <div class="logo-flip-card-back">
+              <p class="mb-0 text-center text-size-m logo-card-text">Your story<br />lives on</p>
+            </div>
+          </div>
         </div>
       </div>
+
+
+      <div class="col-6 col-sm-6 col-md-10 col-lg-10">
+        <app-nav-bar [isMobileView]="isNavBarMobileView"></app-nav-bar>
+      </div>
+
+
     </div>
-
-
-
-
-
-
-
-
-
-
 
   </div>
   <!-- End of Header -->
@@ -36,7 +35,83 @@
 
     <!-- Footer -->
     <div class="footer-container">
-      <p>Footer Content Here</p>
+      <div class="row mx-0">
+        <div class="col-4 px-4">
+          <p class="text-size-18">Need help?</p>
+
+          <div class="footer-divider"></div>
+
+          <div class="row mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">F.A.Q.</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+
+          <div class="row mt-2 mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">Contact Us</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+
+          <div class="row mt-2 mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">Dashboard demo</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+
+          <div class="row mt-2 mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">Memorial page demo</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+        </div>
+
+        <div class="col-4 px-4">
+          <p class="text-size-18">Resources</p>
+
+          <div class="footer-divider"></div>
+
+          <div class="row mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">What is a Memorial site?</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+
+          <div class="row mt-2 mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">How to write an Obituary?</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+
+          <div class="row mt-2 mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">Memorial flowers & their meaning</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+
+          <div class="row mt-2 mx-0 flex-no-wrap align-items-center pointer footer-hyperlink-row width-fit-content">
+            <p class="footer-hyperlinks">Dealing with grief & getting support</p>
+            <mat-icon class="ml-3 p-0">arrow_right_alt</mat-icon>
+          </div>
+        </div>
+
+        <div class="col-4 px-4">
+          <p class="text-size-18">Trusted by users</p>
+
+          <div class="footer-divider"></div>
+
+
+        </div>
+
+      </div>
+
+      <div class="row mx-0 justify-content-center mt-4">
+        <p class="mb-0 p-0 width-fit-content text-size-14">Handcrafted <span class="footer-blue-color">with <mat-icon
+              class="p-0 heart-icon">favorite</mat-icon></span> in 2025 by Digitec Web Solutions</p>
+
+        <div class="footer-blue-dot mx-3"></div>
+
+        <p class="mb-0 p-0 pointer footer-small-hyperlinks text-size-14">Terms of Use</p>
+
+        <div class="footer-blue-dot mx-3"></div>
+
+        <p class="mb-0 p-0 pointer footer-small-hyperlinks text-size-14">Privacy Policy</p>
+
+      </div>
+
     </div>
     <!-- End of Footer -->
   </div>

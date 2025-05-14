@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AppRoutes, ModalTypes } from 'src/app/enums/app.enums';
+import { NavigationRoutes, ModalTypes } from 'src/app/enums/app.enums';
 import { AppHelperFunction } from 'src/app/helpers/app-helper.functions';
 import { LoginRequest } from 'src/app/models/login-request.model';
 import { RegisterRequest } from 'src/app/models/register-request.model';
@@ -127,7 +127,7 @@ export class RegisterComponent implements OnInit {
 
 
   public cancelClicked() {
-    this.router.navigateByUrl(AppRoutes.Home);
+    this.router.navigateByUrl(NavigationRoutes.Home);
   }
   public get registerNameControl() {
     return this.registerFormGroup.get('registerNameControl');

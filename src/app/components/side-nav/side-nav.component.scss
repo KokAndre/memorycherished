@@ -22,12 +22,12 @@
 }
 
 .footer-container {
-    height: 99px;
+    // height: 99px;
     border-top: 1px solid white;
     width: 100%;
     background-color: black;
     color: white;
-    padding: 0px 3rem;
+    padding: 1rem 3rem;
 }
 
 .website-logo {
@@ -96,4 +96,65 @@
 .logo-card-text {
     font-family: math !important;
     font-style: italic !important;
+}
+
+.footer-divider {
+    background-color: #4e6179;
+    height: 2px;
+    width: 50px;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.footer-hyperlink-row {
+    mat-icon {
+        color: #4e6179 !important;
+        font-weight: 600;
+    }
+
+    &:hover {
+        .footer-hyperlinks {
+            border-bottom: 2px solid #4e6179 !important;
+        }
+    }
+}
+
+.footer-hyperlinks {
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    // border-bottom: 1px solid #4e6179 !important;
+    width: fit-content;
+    margin-bottom: 0px;
+    padding: 0px 0px 5px 0px;
+}
+
+.footer-blue-color {
+    color: #4e6179 !important;
+}
+
+.heart-icon {
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    margin-bottom: -3px;
+}
+
+.footer-blue-dot {
+    width: 5px !important;
+    max-width: 5px !important;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #4e6179 !important;
+    padding: 0px !important;
+    align-self: center;
+}
+
+.footer-small-hyperlinks {
+    border-bottom: 2px solid transparent;
+    width: fit-content;
+    margin-bottom: 0px;
+
+    &:hover {
+        border-bottom: 2px solid #4e6179 !important;
+    }
 }

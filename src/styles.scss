@@ -308,6 +308,10 @@ h6,
   text-wrap: nowrap;
 }
 
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
 .underline-text {
   text-decoration: underline;
 }
@@ -582,7 +586,7 @@ h6,
   width: fit-content;
 
   &:hover {
-      color: lightslategrey;
+      color: #4e6179;
   }
 }
 
@@ -606,4 +610,8 @@ p {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.row-no-wrap {
+  flex-wrap: nowrap !important;
 }

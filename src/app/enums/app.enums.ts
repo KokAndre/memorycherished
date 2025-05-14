@@ -1,7 +1,17 @@
-export enum AppRoutes {
+export enum NavigationRoutes {
     Home = '/home',
-    Login = '/members/login',
-    Register = '/members/register',
+    Login = '/login',
+    Register = '/register',
+    About = '/about',
+    PlansAndPricing = '/about/plans-and-pricing',
+    Groups = '/groups',
+    Members = '/groups/members',
+    SharedGallery = '/shared-gallery',
+    HelpingHand = '/helping-hand',
+    SearchResults = '/more/search-results',
+    Contact = '/more/contact',
+    FAQ = '/more/faq',
+    Events = '/more/events'
 }
 
 export enum Endpoints {
@@ -10,8 +20,8 @@ export enum Endpoints {
     BaseURL = 'http://localhost/memory-cherished-api/public/api',
 
     // Members endpoints
-    Login = '/members/login',
-    Register = '/members/register'
+    Login = '/member/login',
+    Register = '/member/register'
 }
 
 export enum CallTypes {

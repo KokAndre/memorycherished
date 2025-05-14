@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivateFn, Router, RouterStateSnapshot } from '@angular/router';
-import { AppRoutes } from '../enums/app.enums';
+import { NavigationRoutes } from '../enums/app.enums';
 import { TokenService } from '../services/token/token.service';
 
 @Injectable({
@@ -16,7 +16,7 @@ export class LoginGuardService {
     if (isLoggedIn) {
       return true;
     } else {
-      this.router.navigateByUrl(AppRoutes.Home);
+      this.router.navigateByUrl(NavigationRoutes.Home);
       return false;
     }
   }

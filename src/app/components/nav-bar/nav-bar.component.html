@@ -1,5 +1,101 @@
-<div class="row mx-0 p-0">
+<div class="row mx-0">
+  <div class="col-6 col-sm-6 col-md-10 col-lg-10">
+    <div class="row mx-0 p-0">
+      <!-- Home -->
+      <div class="dropdown pointer px-0">
+        <div class="dropbtn" appIsRouterLinkActive navLinkToCheck="/home" [currentRoute]="currentRoute">
+          <div class="nav-link-text" (click)="navigateToRoute(navigationRoutes.Home)">Home
+          </div>
+        </div>
+      </div>
 
-  
- 
+      <!-- About -->
+      <div class="dropdown pointer px-0">
+        <div class="dropbtn" appIsRouterLinkActive navLinkToCheck="/about" [currentRoute]="currentRoute">
+          <div class="nav-link-text" (click)="navigateToRoute(navigationRoutes.About)">About<mat-icon
+              class="dropdown-icon ml-1" fontIcon="keyboard_arrow_down"></mat-icon>
+          </div>
+        </div>
+        <div class="dropdown-content-container">
+          <div class="dropdown-content-up-arrow"></div>
+          <div class="dropdown-content">
+            <div class="dropdown-item p-2" (click)="navigateToRoute(navigationRoutes.PlansAndPricing)">Plans & Pricing
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Groups -->
+      <div class="dropdown pointer px-0">
+        <div class="dropbtn" appIsRouterLinkActive navLinkToCheck="/groups" [currentRoute]="currentRoute">
+          <div class="nav-link-text" (click)="navigateToRoute(navigationRoutes.Groups)">Groups<mat-icon
+              class="dropdown-icon ml-1" fontIcon="keyboard_arrow_down"></mat-icon>
+          </div>
+        </div>
+        <div class="dropdown-content-container">
+          <div class="dropdown-content-up-arrow"></div>
+          <div class="dropdown-content">
+            <div class="dropdown-item p-2" (click)="navigateToRoute(navigationRoutes.Members)">Members
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shared Gallery -->
+      <div class="dropdown pointer px-0">
+        <div class="dropbtn" appIsRouterLinkActive navLinkToCheck="/shared-gallery" [currentRoute]="currentRoute">
+          <div class="nav-link-text" (click)="navigateToRoute(navigationRoutes.SharedGallery)">Shared Gallery</div>
+        </div>
+      </div>
+
+      <!-- A Healping Hand -->
+      <div class="dropdown pointer px-0">
+        <div class="dropbtn" appIsRouterLinkActive navLinkToCheck="/helping-hand" [currentRoute]="currentRoute">
+          <div class="nav-link-text" (click)="navigateToRoute(navigationRoutes.HelpingHand)">A Healping Hand</div>
+        </div>
+      </div>
+
+      <!-- More -->
+      <div class="dropdown pointer px-0">
+        <div class="dropbtn" appIsRouterLinkActive navLinkToCheck="/more" [currentRoute]="currentRoute">
+          <div class="nav-link-text">More...<mat-icon class="dropdown-icon ml-1"
+              fontIcon="keyboard_arrow_down"></mat-icon>
+          </div>
+        </div>
+        <div class="dropdown-content-container">
+          <div class="dropdown-content-up-arrow"></div>
+          <div class="dropdown-content">
+            <div class="dropdown-item p-2" (click)="navigateToRoute(navigationRoutes.SearchResults)">Search Results
+            </div>
+            <mat-divider></mat-divider>
+            <div class="dropdown-item p-2" (click)="navigateToRoute(navigationRoutes.Contact)">Contact</div>
+            <mat-divider></mat-divider>
+            <div class="dropdown-item p-2" (click)="navigateToRoute(navigationRoutes.FAQ)">FAQ</div>
+            <mat-divider></mat-divider>
+            <div class="dropdown-item p-2" (click)="navigateToRoute(navigationRoutes.Events)">Events</div>
+            <mat-divider></mat-divider>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="col-6 col-sm-6 col-md-2 col-lg-2 px-0">
+    <div class="row mx-0 p-0">
+      <!-- Login Button -->
+      <div class="dropdown pointer px-0">
+        <div class="dropbtn" appIsRouterLinkActive navLinkToCheck="/login" [currentRoute]="currentRoute">
+          <div class="nav-link-text" (click)="navigateToRoute(navigationRoutes.Login)">
+            <div class="row mx-0 row-no-wrap">
+              <span class="material-symbols-outlined profile-icon mr-2">account_circle</span>
+              <p class="mb-0 p-0">Login</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

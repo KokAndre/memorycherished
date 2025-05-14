@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AppRoutes, ModalTypes } from 'src/app/enums/app.enums';
+import { NavigationRoutes, ModalTypes } from 'src/app/enums/app.enums';
 import { LoginRequest } from 'src/app/models/login-request.model';
 import { AppModalService } from 'src/app/services/app-modal/app-modal.service';
 import { LoginService } from 'src/app/services/login/login.service';
@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
   }
 
   public cancelClicked() {
-    this.router.navigateByUrl(AppRoutes.Home);
+    this.router.navigateByUrl(NavigationRoutes.Home);
   }
 
 

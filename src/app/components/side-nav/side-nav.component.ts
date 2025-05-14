@@ -17,12 +17,37 @@ export class SideNavComponent implements OnInit {
   public dialogRefModel: any = null;
   public checkIsAuthInterval: any;
   public isAuthorised = false;
+  private resizeObserver: ResizeObserver;
+  public isNavBarMobileView = false;
+  public isFooterMobileView = false;
 
-  constructor(public appModalService: AppModalService, private modalDialog: MatDialog, public tokenService: TokenService) { }
+  constructor(public appModalService: AppModalService, private modalDialog: MatDialog, public tokenService: TokenService) {}
 
   ngOnInit() {
+    this.initializeScreenSizeCheck()
     this.initializeIsLoggedInCheck();
     this.initializeModal();
+  }
+
+  public initializeScreenSizeCheck() {
+    const body = document.getElementsByTagName("body")[0];
+    this.resizeObserver = new ResizeObserver(() => {
+      const widthToCheck = window.innerWidth;
+      if (widthToCheck < 975) {
+        this.isNavBarMobileView = true;
+      } else {
+        this.isNavBarMobileView = false;
+      }
+
+      if (widthToCheck < 465) {
+        this.isFooterMobileView = true;
+      } else {
+        this.isFooterMobileView = false;
+      }
+    });
+
+    // Add a listener to body
+    this.resizeObserver.observe(body);
   }
 
   public initializeModal() {

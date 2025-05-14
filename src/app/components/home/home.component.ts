@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AppRoutes } from 'src/app/enums/app.enums';
+import { NavigationRoutes } from 'src/app/enums/app.enums';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,7 @@ import { AppRoutes } from 'src/app/enums/app.enums';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public appRoutes = AppRoutes;
+  public navigationRoutes = NavigationRoutes;
 
   constructor(public router: Router) { }
 
@@ -18,10 +18,26 @@ export class HomeComponent implements OnInit {
     //   interval: 2000,
     //   wrap: false
     // })
+
+    // TEST - FETCH IP
+    this.getTestData().then(data => {
+      console.log('DATA: ', data);
+    });
+
   }
 
-  public navigateToRoute(navigationRoute: AppRoutes) {
+  public navigateToRoute(navigationRoute: NavigationRoutes) {
     this.router.navigateByUrl(navigationRoute);
+  }
+
+  public getTestData() {
+    return fetch('https://ipinfo.io/json', {
+      method: 'get'
+    })
+      .then(response => response.json())
+      .then(data => {
+        return data;
+      });
   }
 
 }

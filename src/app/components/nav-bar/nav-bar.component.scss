@@ -1,98 +1,110 @@
-// .dropdown {
-//     width: fit-content;
-// }
+.dropdown {
+    width: fit-content;
+}
 
-// .dropbtn {
-//     padding-left: 10px;
-//     padding-right: 10px;
-//     height: 100px;
-//     align-content: center !important;
-//     border-bottom: 1px solid transparent;
-// }
+.dropbtn {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    align-content: center !important;
+    border-bottom: 1px solid transparent;
+}
 
-// .dropbtn:hover,
-// .dropdown:hover .dropbtn {
-//     background-color: rgba(0, 0, 0, 0.2);
-//     border-bottom: 1px solid white;
-// }
+.dropbtn:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid white;
+}
 
-// .dropdown-content-container {
-//     display: none;
-//     visibility: hidden;
-//     position: absolute;
-//     z-index: 1;
-//     min-width: 100%;
-// }
+.dropdown-content-container {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    min-width: 100%;
 
-// .dropdown-content {
-//     background-color: #f9f9f9;
-//     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-//     z-index: 1;
-//     color: black !important;
-//     min-width: 100%;
-//     max-height: 80vh;
-//     overflow-y: auto;
-// }
+    // display: block;
+    // visibility: visible;
+}
 
-// .dropdown-content-up-arrow {
-//     height: 10px;
-//     width: 15px;
-//     z-index: 2;
-//     margin-left: 10px;
-//     background-image: url('../../../assets/drop-down-top-arrow3.svg');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-// }
+.dropdown-content {
+    background-color: #2b2a2acc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white !important;
+    min-width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
 
-// .dropdown-content .dropdown-item:hover {
-//     background-color: #ddd;
-// }
+    mat-divider {
+        border-color: #ffffff8a;
+    }
+}
 
-// .dropdown:hover .dropdown-content-container {
-//     display: block;
-//     visibility: visible;
-// }
+.dropdown-content-up-arrow {
+    height: 10px;
+    width: 15px;
+    z-index: 2;
+    margin-left: 10px;
+    // background-image: url('../../../assets/drop-down-top-arrow3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-// .dropdown-icon {
-//     vertical-align: middle;
-//     margin-right: -6px;
-// }
+.dropdown-content .dropdown-item:hover {
+    background-color: #ddd;
+}
 
-// .nav-link-text {
-//     font-size: 14px !important;
-// }
+.dropdown:hover .dropdown-content-container {
+    display: block;
+    visibility: visible;
+}
 
-// .nav-link-active {
-//     border-bottom: 3px solid white !important;
-//     background-color: rgba(0, 0, 0, 0.2) !important;
+.dropdown-icon {
+    vertical-align: middle;
+    margin-right: -6px;
+}
 
-//     .nav-link-text {
-//         margin-bottom: -2px;
-//     }
-// }
+.nav-link-text {
+    font-size: 14px !important;
+}
 
-// .nav-link-active-mobile {
-//     border-bottom: 3px solid white !important;
-//     // background-color: rgba(0, 0, 0, 0.2) !important;
+.nav-link-active {
+    border-bottom: 3px solid white !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
 
-//     .nav-link-text {
-//         margin-bottom: -2px;
-//     }
-// }
+    .nav-link-text {
+        margin-bottom: -2px;
+    }
+}
 
-// .mobile-view-menu-container {
-//     width: 50px;
-//     height: 50px;
-//     padding: 0px;
-// }
+.nav-link-active-mobile {
+    border-bottom: 3px solid white !important;
+    // background-color: rgba(0, 0, 0, 0.2) !important;
 
-// .mobile-menu-icon {
-//     height: 50px;
-//     width: 50px;
-//     font-size: 50px;
-// }
+    .nav-link-text {
+        margin-bottom: -2px;
+    }
+}
 
-// ::ng-deep .mat-mdc-menu-content {
-//     background-color: rgba(0, 0, 0, 0.2);;
-// }
+.mobile-view-menu-container {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+
+.mobile-menu-icon {
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+}
+
+::ng-deep .mat-mdc-menu-content {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.profile-icon {
+    width: fit-content;
+    padding: 0px !important;
+}
