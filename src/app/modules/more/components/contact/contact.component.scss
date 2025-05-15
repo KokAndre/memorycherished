@@ -1,0 +1,89 @@
+.contact-image-container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+
+    p {
+        font-size: 4rem;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        font-weight: 700;
+        line-height: 4rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.contact-image {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.mail-hyperlink {
+    color: white;
+    border-bottom: 1px solid transparent;
+    text-decoration: none !important;
+
+    &:hover {
+        border-color: white !important;
+    }
+}
+
+::ng-deep .mdc-text-field {
+    background-color: black !important;
+    border-radius: 4px !important;
+    border: 1px solid white;
+    color: white !important;
+    // caret-color: white;
+}
+
+::ng-deep .mat-form-field-invalid {
+    .mdc-text-field {
+        border: 1px solid #f44336 !important;
+    }
+
+    .mdc-floating-label {
+        color: #f44336 !important;
+    }
+}
+
+::ng-deep .mdc-text-field .mdc-text-field__input {
+    caret-color: white;
+}
+
+::ng-deep .mdc-text-field--invalid .mdc-text-field__input {
+    caret-color: #f44336;
+}
+
+::ng-deep
+    .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea)
+    .mat-mdc-form-field-infix {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+::ng-deep .mat-mdc-form-field-infix {
+    min-height: 40px;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+::ng-deep .mdc-floating-label {
+    color: white !important;
+}
+
+::ng-deep .mat-mdc-floating-label {
+    top: 20px !important;
+}
+
+::ng-deep .mdc-text-field--filled .mdc-floating-label--float-above {
+    transform: translateY(-50%) !important;
+    // display: none !important;
+}

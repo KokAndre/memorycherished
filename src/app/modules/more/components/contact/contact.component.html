@@ -1,0 +1,54 @@
+<div class="contact-image-container">
+  <img class="contact-image" src="assets/more/contact-image.avif" alt="Contact image">
+  <p>Get in Touch</p>
+</div>
+
+<div class="row mx-5 my-5">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6 align-content-center">
+    <p class="mb-0 text-size-18">For any inquiries, please feel free to email us at <a class="mail-hyperlink"
+        href="mailto:info@memorycherished.com">info&#64;memorycherished.com</a></p>
+  </div>
+  <div class="col-12 col-sm-12 col-md-6 col-lg-6" [formGroup]="contactFormGroup">
+    <p class="mb-5">Send Us Your Thoughts</p>
+
+    <div class="row justify-content-center mx-0">
+      <mat-form-field class="col-12 px-0">
+        <mat-label *ngIf="!nameControl?.value">Name</mat-label>
+        <input style="color: white;" matInput maxlength="50" formControlName="nameControl">
+        <!-- <mat-error *ngIf="nameControl?.hasError('required')">Name is required</mat-error> -->
+      </mat-form-field>
+    </div>
+
+    <div class="row justify-content-center mx-0">
+      <mat-form-field class="col-12 px-0">
+        <mat-label *ngIf="!emailControl?.value">Email</mat-label>
+        <input style="color: white;" matInput maxlength="100" formControlName="emailControl">
+        <!-- <mat-error *ngIf="emailControl?.hasError('required')">Email is required</mat-error>
+        <mat-error *ngIf="emailControl?.hasError('pattern')">Enter a valid email</mat-error> -->
+      </mat-form-field>
+    </div>
+
+    <div class="row justify-content-center mx-0">
+      <mat-form-field class="col-12 px-0">
+        <mat-label *ngIf="!phoneNumberControl?.value">Phone</mat-label>
+        <input style="color: white;" matInput maxlength="10" formControlName="phoneNumberControl">
+        <!-- <mat-error *ngIf="phoneNumberControl?.hasError('required')">Phone number is required</mat-error>
+        <mat-error *ngIf="phoneNumberControl?.hasError('maxlength')">Enter a valid phone number</mat-error>
+        <mat-error *ngIf="phoneNumberControl?.hasError('minlength')">Enter a valid phone number</mat-error> -->
+      </mat-form-field>
+    </div>
+
+    <div class="row justify-content-center mx-0">
+      <mat-form-field class="col-12 px-0">
+        <mat-label *ngIf="!messageControl?.value">Type your message here...</mat-label>
+        <textarea style="color: white;" matInput maxlength="300" formControlName="messageControl"></textarea>
+        <!-- <mat-error *ngIf="messageControl?.hasError('required')">Message is required</mat-error> -->
+      </mat-form-field>
+    </div>
+
+    <div class="row justify-content-center">
+      <button class="secondary-button width-fit-content px-5">Register</button>
+    </div>
+
+  </div>
+</div>
